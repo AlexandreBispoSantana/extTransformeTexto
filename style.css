@@ -5,8 +5,6 @@
   /* Fontes Google */
   font-family: "Ubuntu", sans-serif;
   font-size: 12px;
-
-  border: solid 1px blue;
 }
 
 .container-pai {
@@ -18,12 +16,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
+.container-filho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px;
+  gap: 3px;
+}
+
+
+
 .input-text {
-  width: 160px;
+  width: 157px;
   padding: 1px 3px;
   outline: none;
+}
+
+#input-resultado {
+  width: 157px;
+  height: 70px;
+  padding: 3px;
+  outline: none;
+  resize: none; /* impede redimensionamento */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  text-align: left;
+
+  display: flex;
+  align-items: flex-start; /* garante texto no topo */
+  justify-content: flex-start;
+}
+
+#input-resultado::placeholder {
+  text-align: left;
 }
 
 .container-button {
